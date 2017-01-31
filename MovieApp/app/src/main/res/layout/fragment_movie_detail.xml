@@ -1,0 +1,125 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.basma.movieapp.MovieDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menurelative"
+    >
+
+
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+
+
+    <ImageButton android:id="@+id/backbutton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_back"
+        android:background="#00ffffff"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/toolbar_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MovieDetail"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/moviename"
+        android:layout_below="@+id/toolbar"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="60dp"
+        android:background="@color/accent_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/rate1"
+        android:layout_below="@+id/moviename"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/date"
+        android:layout_below="@+id/rate1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/moviename"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/overview"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        />
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/overview"
+
+        android:id="@+id/layout1">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewTr"
+            android:layout_below="@+id/overview"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="400dp"
+            />
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="2dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewRev"
+            android:layout_below="@+id/layout1"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentLeft="true"/>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
