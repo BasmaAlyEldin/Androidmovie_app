@@ -234,8 +234,8 @@ View v;
                     final   ArrayList <String>youtublist1=new ArrayList();
                     JSONArray Idarray =response.getJSONArray("results");
                     int j=1;
-                    youtublist1.add("Trailers :");
-                    youtublist.add("trailers");
+                   // youtublist1.add("Trailers :");
+                    //youtublist.add("trailers");
                     for (int i = 0; i < Idarray.length(); i++) {
                         JSONObject jsonmovie=Idarray.getJSONObject(i);
 
